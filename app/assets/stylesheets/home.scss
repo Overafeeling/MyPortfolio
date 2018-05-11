@@ -1,0 +1,68 @@
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.style_image {
+    position: relative;
+    animation-name: plane; /* Safari 4.0 - 8.0 */
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+.clouds {
+  overflow: hidden;
+  position: fixed;/* Safari 4.0 - 8.0 */
+  animation-name: cloud;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+
+
+}
+
+
+.small-clouds:hover {
+  position: relative;
+  animation-name: small-clouds; /* Safari 4.0 - 8.0 */
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.centerclouds:hover {
+  position: relative;
+  animation-name: small-clouds; /* Safari 4.0 - 8.0 */
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+
+@keyframes small-clouds {
+    0%   { top:0px;}
+    25%  { top:3px;}
+    50%  { top:-3px;}
+    75%  { top:3px;}
+    100% { top:0px;}
+}
+
+@keyframes plane {
+    0%   { top:0px;}
+    25%  { top:4px;}
+    50%  { top:-4px;}
+    75%  { top:4px;}
+    100% { top:0px;}
+}
+
+@keyframes cloud {
+    0%   { left:100%;}
+}
+
+.profilepic {
+   margin-top: 30px ;
+   margin-bottom: 30px;
+   width: 50%;
+   border-radius:50%;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   border-style: solid;
+   border-width: 15px;
+   border-color: gray;
+}
